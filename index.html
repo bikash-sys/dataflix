@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">NETFLIX</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shows</a>
+    <a href="#">Movies</a>
+    <a href="#">My List</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <video class="hero-video" id='myVideo' src="video.mp4" autoplay muted loop playsinline></video>
+
+    <source src="video.mp4" type="video/mp4">
+  </video>
+    <script>
+        const videoElement = document.getElementById('myVideo');
+        videoElement.addEventListener('mouseenter', () => {
+            videoElement.currentTime = 0; 
+            videoElement.play();
+        });
+        videoElement.addEventListener('mouseleave', () => {
+            videoElement.pause();
+        });
+    </script>
+
+  <div class="hero-text">
+    <h2>Stranger Things</h2>
+    <p>
+      A missing kid, strange lights, and secrets no one was supposed to find.
+    </p>
+    <div class="buttons">
+      <button class="play">▶ Play</button>
+      <button class="info">More Info</button>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <h3>Trending Now</h3>
+  <div class="cards">
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTSjQypwEJ92Pwmnbwo1odQJiF2B7Hy8jjoSnkeHRNjEp4opPmjpc4d_ujCyewQQ6t5dEt6GpvEApkVCqlLrLruKDNMeezAfP0AVBChQLA1h1lIFsPuItioZ-mUa1qpL7_MYHstk_fOUaE-1pHQCTXRMXCtaLV43xu4vtHAN5wPvz7jFrlLNXBkyWAxBxtDG3hI8Y3PWMphKYFvn0VNa1xuTJI44t4rLwL-zUQNuGR0PDf_fMd5M5Sl_RrdOc5q-rWTKWOL_W1AUQ_Qrqb8WRsFDe8zoDJijmZQgnMu0VO9U9Wmq9nCZnQ.jpg?r=ed7">
+      <video src="videos/dark.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeO5E2AbvRpAODGBiPBH3EE1h1qnwoz3Y5E4RiiMunPr5rT5xgWRhuxyWS94F1OOy6xIlGXlCAaekxbdZ-tAHlnInaBrTWYR-fc.jpg?r=b06">
+      <video src="videos/breakingbad.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABZ8UonFQLKnk4Iy_TYF6vuDDRJZbbpdw3L71ccY7LjqVfQs-ddEAka_1FFRxsCQkS9rKGCrK6ZNDx-D7yyIv2MLJT_qxJ1UrCHI.jpg?r=482">
+      <video src="videos/witcher.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbhhFKVk6plGhvuTCsTfVK6Buuq9uN9zkjCLB3J9OmiQ0SUFQYPyFatbF0TKmgaajIeHBlXNZ5jNWhUaQfgEx3rUPWwIh-IlC2k.jpg?r=01d">
+      <video src="videos/moneyheist.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABeOsd3W4CJEKTmRj_zYfbont57xKr35yxsFeHe2pEiLPrznK5C1M1X-QJ-_eOLK43byoyZed-wijTnsa-Exz12BkZN-3bRaX8-ncHfDfHlwn8Tt_Q5_Fqwl2bmKADyzbQpmn7DO4o7MRn75T39i3W6DWj6g_fyikXb3z7HZ4sR4HChhLbLcEgG1rvQa3sctexSLNxQ-lLHLAEcyjO9ZhgfshcTPt_sfemKhNy84xJHdaLQVjF-rhgcnI7JqhMGNKla4W0ZkFvX3lXZyzRvz2sTZtACXfNkijdum5XMLK8Huf5aUBwPpNdMnsqt5J0w.jpg?r=1a8">
+      <video src="videos/ozark.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="https://occ-0-4994-2186.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABYWAcd9ZirxhTYn9PA6M5GWhbAXQNkVz0rxsTmseonoCHch1-efcTW5blCJ7mAg9a8yVSktoPIdDyx2lAiNjRYGHVceMBO4WXcyJ.jpg?r=8be">
+      <video src="video.mp4" autoplay muted loop playsinline></video>
+    </div>
+  </div>
+</section>
+
+<section class="row">
+  <h3>Popular on Netflix</h3>
+  <div class="cards">
+    <div class="card">
+      <img src="images/narcos.jpg">
+      <video src="videos/narcos.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="images/lucifer.jpg">
+      <video src="videos/lucifer.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="images/you.jpg">
+      <video src="videos/you.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="images/squidgame.jpg">
+      <video src="videos/squidgame.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="images/crown.jpg">
+      <video src="videos/crown.mp4" muted loop></video>
+    </div>
+    <div class="card">
+      <img src="images/vikings.jpg">
+      <video src="videos/vikings.mp4" muted loop></video>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p></p>
+</footer>
+
+</body>
+</html>
