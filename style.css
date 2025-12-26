@@ -360,11 +360,13 @@ footer {
 
   .cards {
     gap: 10px;
+    overflow-x: auto;
   }
 
   .card {
     min-width: 120px;
     height: 70px;
+    
   }
 
   .card:hover {
